@@ -16,8 +16,6 @@ const selector = "link[rel='icon'], link[rel='shortcut icon']";
 // Actual running code
 // ================================================================
 
-console.dir(chrome.runtime.getURL("config/config.json"));
-
 // Check if url is in list and invert accordingly
 urlList.forEach(function(item) {
 	if (location.host == item) invertFavicon();
